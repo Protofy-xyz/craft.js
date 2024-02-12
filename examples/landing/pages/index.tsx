@@ -1,8 +1,14 @@
-import { Editor, Frame, Element } from '@craftjs/core';
+import {
+  Editor,
+  Frame,
+  Element,
+  useEditorContext,
+  useEditor,
+} from '@craftjs/core';
 import { createMuiTheme } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 import { NextSeo } from 'next-seo';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Viewport, RenderNode } from '../components/editor';
 import { Container, Text } from '../components/selectors';
@@ -25,6 +31,46 @@ const theme = createMuiTheme({
 });
 
 function App() {
+  const options = {
+    resolver: {
+      Container,
+      Text,
+      Custom1,
+      Custom2,
+      Custom2VideoDrop,
+      Custom3,
+      Custom3BtnDrop,
+      OnlyButtons,
+      Button,
+      Video,
+    },
+    enabled: false,
+    onRender: RenderNode,
+  };
+
+  const { actions } = useEditor((state) => {
+    return {
+      hola: 'hola',
+    };
+  });
+
+  /* 
+  const context = useEditorContext(options);
+  useEffect(() => {
+    context.subscribe(
+      (_) => {
+        console.log('siuu');
+        return {
+          json: context.query.serialize(),
+        };
+      },
+      () => {
+        context.query.getOptions().onNodesChange(context.query);
+        console.log('papi');
+      }
+    );
+  }, [context]); */
+
   return (
     <ThemeProvider theme={theme}>
       <div className="h-full h-screen">
@@ -37,22 +83,7 @@ function App() {
             cardType: 'summary_large_image',
           }}
         />
-        <Editor
-          resolver={{
-            Container,
-            Text,
-            Custom1,
-            Custom2,
-            Custom2VideoDrop,
-            Custom3,
-            Custom3BtnDrop,
-            OnlyButtons,
-            Button,
-            Video,
-          }}
-          enabled={false}
-          onRender={RenderNode}
-        >
+        <Editor {...options} /*  parentContext={context} */>
           <Viewport>
             <Frame>
               <Element

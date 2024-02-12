@@ -28,6 +28,7 @@ export const editorInitialState: EditorState = {
       error: 'red',
       success: 'rgb(98, 196, 98)',
     },
+    parentContext: null,
     handlers: (store) =>
       new DefaultEventHandlers({
         store,
