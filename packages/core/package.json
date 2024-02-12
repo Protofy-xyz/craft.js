@@ -1,5 +1,5 @@
 {
-  "name": "@craftjs/core",
+  "name": "@protocraft/core",
   "version": "0.2.4",
   "description": "A React Framework for building extensible drag and drop page editors",
   "keywords": [
@@ -15,15 +15,15 @@
     "wysiwyg",
     "html"
   ],
-  "author": "Prev Wong <prevwong@gmail.com>",
-  "homepage": "https://github.com/prevwong/craft.js/",
+  "author": "Protofy <hello@protofy.xyz>",
+  "homepage": "https://github.com/protofy.xyz/craft.js/",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/prevwong/craft.js/"
+    "url": "https://github.com/protofy-xyz/craft.js/"
   },
   "scripts": {
     "start": "cross-env NODE_ENV=development ../../scripts/build.sh",
@@ -32,7 +32,7 @@
     "clean": "rimraf lib dist"
   },
   "bugs": {
-    "url": "https://github.com/prevwong/craft.js/issues"
+    "url": "https://github.com/protofy-xyz/craft.js/issues"
   },
   "dependencies": {
     "@craftjs/utils": "^0.2.1",

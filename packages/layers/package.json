@@ -1,5 +1,5 @@
 {
-  "name": "@craftjs/layers",
+  "name": "@protocraft/layers",
   "description": "A Photoshop-like layers panel for your page editor",
   "keywords": [
     "wysiwyg",
@@ -12,7 +12,7 @@
     "react"
   ],
   "version": "0.2.1",
-  "author": "Prev Wong <prevwong@gmail.com>",
+  "author": "Protofy <hello@protofy.xyz>",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "license": "MIT",
@@ -24,12 +24,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/prevwong/craft.js/"
+    "url": "https://github.com/protofy.xyz/craft.js/"
   },
   "bugs": {
-    "url": "https://github.com/prevwong/craft.js/issues"
+    "url": "https://github.com/protofy.xyz/craft.js/issues"
   },
-  "homepage": "https://github.com/prevwong/craft.js/",
+  "homepage": "https://github.com/protofy.xyz/craft.js/",
   "dependencies": {
     "@craftjs/utils": "^0.2.1",
     "react-contenteditable": "^3.3.3"

@@ -1,8 +1,8 @@
 {
-  "name": "@craftjs/utils",
+  "name": "@protocraft/utils",
   "description": "Utilities used internally across the craft.js monorepo",
   "version": "0.2.1",
-  "author": "Prev Wong <prevwong@gmail.com>",
+  "author": "Protofy <hello@protofy.xyz>",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",

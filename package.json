@@ -1,7 +1,7 @@
 {
   "npmClient": "yarn",
   "private": true,
-  "author": "Prev Wong <prevwong@gmail.com>",
+  "author": "Protofy <hello@protofy.xyz>",
   "scripts": {
     "dev": "./scripts/dev.sh",
     "dev:site": "lerna run start --scope site",
@@ -76,7 +76,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/prevwong/craft.js.git"
+    "url": "git+https://github.com/protofy.xyz/craft.js.git"
   },
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx}": [
