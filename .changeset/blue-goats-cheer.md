@@ -1,5 +1,5 @@
 ---
-"@craftjs/layers": patch
+"@protocraft/layers": patch
 ---
 
 Improve defaultLayerHeader chevron rotation

@@ -1,4 +1,4 @@
-import { useCollector } from '@craftjs/utils';
+import { useCollector } from '@protocraft/utils';
 import { useContext, useMemo } from 'react';
 
 import { LayerManagerContext } from './context';

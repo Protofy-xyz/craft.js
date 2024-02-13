@@ -1,4 +1,4 @@
-# @craftjs/core
+# @protocraft/core
 
 ## 0.2.4
 
@@ -29,4 +29,4 @@
 - [#567](https://github.com/prevwong/craft.js/pull/567) [`2fffe69`](https://github.com/prevwong/craft.js/commit/2fffe6951af8e49a9b8389602d162fc3b38662a2) Thanks [@prevwong](https://github.com/prevwong)! - Fix orphaned nodes when parsing from Frame's children in strict mode
 
 - Updated dependencies [[`462d368`](https://github.com/prevwong/craft.js/commit/462d368e1ffd2a8b7ae987beae8a64720b4bdf67)]:
-  - @craftjs/utils@0.2.1
+  - @protocraft/utils@0.2.1

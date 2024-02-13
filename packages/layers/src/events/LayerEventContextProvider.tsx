@@ -1,4 +1,4 @@
-import { useEventHandler } from '@craftjs/core';
+import { useEventHandler } from '@protocraft/core';
 import React, { useMemo } from 'react';
 
 import { LayerEventHandlerContext } from './LayerEventContext';

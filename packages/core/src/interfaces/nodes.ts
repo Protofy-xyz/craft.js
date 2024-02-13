@@ -1,4 +1,4 @@
-import { QueryCallbacksFor } from '@craftjs/utils';
+import { QueryCallbacksFor } from '@protocraft/utils';
 import React from 'react';
 
 import { QueryMethods } from '../editor/query';
@@ -64,8 +64,8 @@ export type FreshNode = {
 export type ReduceCompType =
   | string
   | {
-      resolvedName: string;
-    };
+    resolvedName: string;
+  };
 
 export type ReducedComp = {
   type: ReduceCompType;

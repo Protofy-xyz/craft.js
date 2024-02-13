@@ -1,4 +1,4 @@
-import { useEditor, ROOT_NODE } from '@craftjs/core';
+import { useEditor, ROOT_NODE } from '@protocraft/core';
 import React, { useRef, useEffect, useLayoutEffect, useState } from 'react';
 
 import { LayerContextProvider } from './LayerContextProvider';
@@ -64,8 +64,8 @@ export const LayerNode: React.FC = () => {
         {},
         children && expanded
           ? children.map((id) => (
-              <LayerContextProvider key={id} id={id} depth={depth + 1} />
-            ))
+            <LayerContextProvider key={id} id={id} depth={depth + 1} />
+          ))
           : null
       )}
     </div>

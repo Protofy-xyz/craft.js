@@ -1,5 +1,5 @@
-import { useEditor } from '@craftjs/core';
-import { RenderIndicator } from '@craftjs/utils';
+import { useEditor } from '@protocraft/core';
+import { RenderIndicator } from '@protocraft/utils';
 import React, { useMemo } from 'react';
 
 import { useLayerManager } from '../manager/useLayerManager';
@@ -63,8 +63,8 @@ export const RenderLayerIndicator: React.FC<any> = ({ children }) => {
     <div>
       {events.indicator
         ? React.createElement(RenderIndicator, {
-            style: indicatorPosition,
-          })
+          style: indicatorPosition,
+        })
         : null}
       {children}
     </div>

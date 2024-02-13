@@ -1,4 +1,4 @@
-import { RenderIndicator, getDOMInfo } from '@craftjs/utils';
+import { RenderIndicator, getDOMInfo } from '@protocraft/utils';
 import React, { useEffect } from 'react';
 
 import { useEventHandler } from './EventContext';
@@ -40,7 +40,7 @@ export const RenderEditorIndicator = () => {
         indicator.placement,
         getDOMInfo(indicator.placement.parent.dom),
         indicator.placement.currentNode &&
-          getDOMInfo(indicator.placement.currentNode.dom),
+        getDOMInfo(indicator.placement.currentNode.dom),
         indicatorOptions.thickness
       ),
       backgroundColor: indicator.error

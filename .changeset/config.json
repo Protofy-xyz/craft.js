@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
   "changelog": [
     "@changesets/changelog-github",
-    { "repo": "prevwong/craft.js" }
+    { "repo": "protofy.xyz/craft.js" }
   ],
   "commit": false,
   "fixed": [],

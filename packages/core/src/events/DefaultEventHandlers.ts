@@ -1,4 +1,4 @@
-import { isChromium, isLinux } from '@craftjs/utils';
+import { isChromium, isLinux } from '@protocraft/utils';
 import isFunction from 'lodash/isFunction';
 import React from 'react';
 
@@ -196,7 +196,7 @@ export class DefaultEventHandlers<O = {}> extends CoreEventHandlers<
       },
       drag: (el: HTMLElement, id: NodeId) => {
         if (!store.query.node(id).isDraggable()) {
-          return () => {};
+          return () => { };
         }
 
         el.setAttribute('draggable', 'true');

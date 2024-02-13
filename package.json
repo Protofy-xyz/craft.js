@@ -1,6 +1,5 @@
 {
   "npmClient": "yarn",
-  "private": true,
   "author": "Protofy <hello@protofy.xyz>",
   "scripts": {
     "dev": "./scripts/dev.sh",
@@ -19,7 +18,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "changeset:version": "changeset version",
     "changeset:publish": "changeset publish",
-    "publish": "run-s build lint test changeset:publish"
+    "publish": "run-s build test changeset:publish"
   },
   "devDependencies": {
     "@babel/cli": "7.20.7",

@@ -1,4 +1,4 @@
-# @craftjs/utils
+# @protocraft/utils
 
 ## 0.2.1
 

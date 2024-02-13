@@ -11,7 +11,7 @@ import {
   ERROR_MOVE_TOP_LEVEL_NODE,
   ERROR_MOVE_CANNOT_DROP,
   ROOT_NODE,
-} from '@craftjs/utils';
+} from '@protocraft/utils';
 import invariant from 'tiny-invariant';
 
 import { EditorState, NodeId, NodeSelector } from '../interfaces';
@@ -193,7 +193,7 @@ export function NodeHelpers(state: EditorState, id: NodeId) {
 
           invariant(
             !targetDeepNodes.includes(newParentNode.id) &&
-              newParentNode.id !== targetNode.id,
+            newParentNode.id !== targetNode.id,
             ERROR_MOVE_TO_DESCENDANT
           );
 
@@ -207,7 +207,7 @@ export function NodeHelpers(state: EditorState, id: NodeId) {
 
           invariant(
             currentParentNode ||
-              (!currentParentNode && !state.nodes[targetNode.id]),
+            (!currentParentNode && !state.nodes[targetNode.id]),
             ERROR_DUPLICATE_NODEID
           );
 

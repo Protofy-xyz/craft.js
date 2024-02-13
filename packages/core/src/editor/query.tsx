@@ -5,7 +5,7 @@ import {
   deprecationWarning,
   DEPRECATED_ROOT_NODE,
   ROOT_NODE,
-} from '@craftjs/utils';
+} from '@protocraft/utils';
 import React from 'react';
 import invariant from 'tiny-invariant';
 
@@ -67,17 +67,17 @@ export function QueryMethods(state: EditorState) {
 
       const dimensionsInContainer = targetParentNodes
         ? targetParentNodes.reduce((result, id: NodeId) => {
-            const dom = nodesToDOM(state.nodes[id]);
-            if (dom) {
-              const info: NodeInfo = {
-                id,
-                ...getDOMInfo(dom),
-              };
+          const dom = nodesToDOM(state.nodes[id]);
+          if (dom) {
+            const info: NodeInfo = {
+              id,
+              ...getDOMInfo(dom),
+            };
 
-              result.push(info);
-            }
-            return result;
-          }, [] as NodeInfo[])
+            result.push(info);
+          }
+          return result;
+        }, [] as NodeInfo[])
         : [];
 
       const dropAction = findPosition(

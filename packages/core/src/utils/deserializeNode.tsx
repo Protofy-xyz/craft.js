@@ -1,4 +1,4 @@
-import { ERROR_DESERIALIZE_COMPONENT_NOT_IN_RESOLVER } from '@craftjs/utils';
+import { ERROR_DESERIALIZE_COMPONENT_NOT_IN_RESOLVER } from '@protocraft/utils';
 import React from 'react';
 import invariant from 'tiny-invariant';
 
@@ -21,8 +21,8 @@ const restoreType = (type: ReduceCompType, resolver: Resolver) =>
       ? Canvas
       : resolver[type.resolvedName]
     : typeof type === 'string'
-    ? type
-    : null;
+      ? type
+      : null;
 
 export const deserializeComp = (
   data: ReducedComp,

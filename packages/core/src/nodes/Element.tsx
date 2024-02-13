@@ -1,4 +1,4 @@
-import { ERROR_TOP_LEVEL_ELEMENT_NO_ID, useEffectOnce } from '@craftjs/utils';
+import { ERROR_TOP_LEVEL_ELEMENT_NO_ID, useEffectOnce } from '@protocraft/utils';
 import React, { useState } from 'react';
 import invariant from 'tiny-invariant';
 

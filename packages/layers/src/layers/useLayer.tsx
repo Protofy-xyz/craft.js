@@ -1,5 +1,5 @@
-import { useEditor } from '@craftjs/core';
-import { wrapConnectorHooks } from '@craftjs/utils';
+import { useEditor } from '@protocraft/core';
+import { wrapConnectorHooks } from '@protocraft/utils';
 import { useContext, useMemo } from 'react';
 
 import { LayerContext } from './LayerContext';

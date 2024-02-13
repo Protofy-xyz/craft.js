@@ -1,5 +1,5 @@
-import { NodeId } from '@craftjs/core';
-import { EventHandlerConnectors } from '@craftjs/utils';
+import { NodeId } from '@protocraft/core';
+import { EventHandlerConnectors } from '@protocraft/utils';
 import React from 'react';
 
 import { LayerHandlers } from '../events/LayerHandlers';

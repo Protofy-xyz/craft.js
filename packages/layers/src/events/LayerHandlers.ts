@@ -1,4 +1,4 @@
-import { NodeId, Node, DerivedCoreEventHandlers } from '@craftjs/core';
+import { NodeId, Node, DerivedCoreEventHandlers } from '@protocraft/core';
 
 import { LayerIndicator } from '../interfaces';
 
@@ -10,9 +10,9 @@ export class LayerHandlers extends DerivedCoreEventHandlers<{
     indicator: LayerIndicator;
     currentCanvasHovered: Node;
   } = {
-    indicator: null,
-    currentCanvasHovered: null,
-  };
+      indicator: null,
+      currentCanvasHovered: null,
+    };
 
   getLayer(id: NodeId) {
     return this.options.layerStore.getState().layers[id];
@@ -62,7 +62,7 @@ export class LayerHandlers extends DerivedCoreEventHandlers<{
               ) {
                 const currNode =
                   currentCanvasHovered.data.nodes[
-                    currentCanvasHovered.data.nodes.length - 1
+                  currentCanvasHovered.data.nodes.length - 1
                   ];
 
                 if (!currNode) {

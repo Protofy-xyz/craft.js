@@ -9,7 +9,7 @@ import {
   CallbacksFor,
   Delete,
   ERROR_NOT_IN_RESOLVER,
-} from '@craftjs/utils';
+} from '@protocraft/utils';
 import invariant from 'tiny-invariant';
 
 import { QueryMethods } from './query';
@@ -41,13 +41,13 @@ const Methods = (
     parentId?: NodeId,
     addNodeType?:
       | {
-          type: 'child';
-          index: number;
-        }
+        type: 'child';
+        index: number;
+      }
       | {
-          type: 'linked';
-          id: string;
-        }
+        type: 'linked';
+        id: string;
+      }
   ) => {
     const iterateChildren = (id: NodeId, parentId?: NodeId) => {
       const node = tree.nodes[id];

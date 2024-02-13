@@ -2,7 +2,7 @@ import {
   useMethods,
   SubscriberAndCallbacksFor,
   PatchListener,
-} from '@craftjs/utils';
+} from '@protocraft/utils';
 
 import { ActionMethods } from './actions';
 import { QueryMethods } from './query';
@@ -35,7 +35,7 @@ export const editorInitialState: EditorState = {
         removeHoverOnMouseleave: false,
         isMultiSelectEnabled: (e: MouseEvent) => !!e.metaKey,
       }),
-    normalizeNodes: () => {},
+    normalizeNodes: () => { },
   },
 };
 
