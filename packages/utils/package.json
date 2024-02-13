@@ -1,7 +1,7 @@
 {
   "name": "@protocraft/utils",
   "description": "Utilities used internally across the craft.js monorepo",
-  "version": "0.2.1-0",
+  "version": "0.2.1-3",
   "author": "Protofy <hello@protofy.xyz>",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
