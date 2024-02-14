@@ -1,4 +1,4 @@
-import { Element, useNode } from '@craftjs/core';
+import { Element, useNode } from '@protocraft/core';
 import React from 'react';
 
 import { Button } from '../Button';

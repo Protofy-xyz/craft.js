@@ -9,7 +9,7 @@
       "@protocraft/core": [
         "packages/core/src/index"
       ],
-      "@craftjs/*": [
+      "@protocraft/*": [
         "packages/core/src/*"
       ],
       "@protocraft/layers": [

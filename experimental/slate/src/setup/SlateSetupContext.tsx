@@ -1,5 +1,5 @@
-import { useEditor } from '@craftjs/core';
-import { useEffectOnce } from '@craftjs/utils';
+import { useEditor } from '@protocraft/core';
+import { useEffectOnce } from '@protocraft/utils';
 import React, { useState, createContext } from 'react';
 
 import { SlateSetupContextType } from '../interfaces';

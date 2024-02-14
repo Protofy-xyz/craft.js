@@ -1,5 +1,5 @@
-import { useEditor } from '@craftjs/core';
-import { Layers } from '@craftjs/layers';
+import { useEditor } from '@protocraft/core';
+import { Layers } from '@protocraft/layers';
 import React, { useState } from 'react';
 import styled from 'styled-components';
 

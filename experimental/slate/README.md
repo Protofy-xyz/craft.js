@@ -1,8 +1,8 @@
 <div align="center" style={{d}}>
-<h1>@craftjs/slate</h1>
-<a href="https://www.npmjs.com/package/@craftjs/slate">
-  <img src="https://img.shields.io/npm/v/@craftjs/slate?color=%232680eb&label=NPM&logo=npm&logoColor=%232680eb&style=for-the-badge">
-</a><img alt="NPM" src="https://img.shields.io/npm/l/@craftjs/slate?color=%23000&style=for-the-badge">
+<h1>@protocraft/slate</h1>
+<a href="https://www.npmjs.com/package/@protocraft/slate">
+  <img src="https://img.shields.io/npm/v/@protocraft/slate?color=%232680eb&label=NPM&logo=npm&logoColor=%232680eb&style=for-the-badge">
+</a><img alt="NPM" src="https://img.shields.io/npm/l/@protocraft/slate?color=%23000&style=for-the-badge">
 </div>
 
 <p align="center">

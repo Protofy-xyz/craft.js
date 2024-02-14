@@ -1,4 +1,4 @@
-import { EditorState } from '@craftjs/core';
+import { EditorState } from '@protocraft/core';
 
 import mergeElements from './mergeElements';
 import { removeInvalidNodes } from './removeInvalidNodes';

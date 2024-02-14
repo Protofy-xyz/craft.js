@@ -19,8 +19,8 @@ export const Editor: React.FC<React.PropsWithChildren<Partial<Options>>> = ({
   if (options.resolver !== undefined) {
     invariant(
       typeof options.resolver === 'object' &&
-      !Array.isArray(options.resolver) &&
-      options.resolver !== null,
+        !Array.isArray(options.resolver) &&
+        options.resolver !== null,
       ERROR_RESOLVER_NOT_AN_OBJECT
     );
   }

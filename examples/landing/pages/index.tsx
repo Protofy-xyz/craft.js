@@ -1,12 +1,12 @@
+import { createMuiTheme } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 import {
   Editor,
   Frame,
   Element,
   useEditorContext,
   useEditor,
-} from '@craftjs/core';
-import { createMuiTheme } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/core/styles';
+} from '@protocraft/core';
 import { NextSeo } from 'next-seo';
 import React, { useEffect, useState } from 'react';
 
@@ -47,12 +47,6 @@ function App() {
     enabled: false,
     onRender: RenderNode,
   };
-
-  const { actions } = useEditor((state) => {
-    return {
-      hola: 'hola',
-    };
-  });
 
   /* 
   const context = useEditorContext(options);

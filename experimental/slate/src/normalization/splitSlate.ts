@@ -1,4 +1,4 @@
-import { EditorState, QueryMethods } from '@craftjs/core';
+import { EditorState, QueryMethods } from '@protocraft/core';
 import forIn from 'lodash/forIn';
 import pickBy from 'lodash/pickBy';
 import shortid from 'shortid';

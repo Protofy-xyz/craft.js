@@ -1,4 +1,4 @@
-import { useNode } from '@craftjs/core';
+import { useNode } from '@protocraft/core';
 import {
   ExpansionPanel,
   ExpansionPanelDetails,

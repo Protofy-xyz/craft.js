@@ -1,4 +1,4 @@
-import { useNode } from '@craftjs/core';
+import { useNode } from '@protocraft/core';
 import React, { createContext, useMemo, useRef, useState } from 'react';
 import { Node, Range, Transforms } from 'slate';
 import { ReactEditor, Slate } from 'slate-react';
@@ -9,10 +9,10 @@ export const SlateNodeContext = createContext<SlateNodeContextType>({
   id: null,
   enabled: true,
   actions: {
-    setEditorValue: () => {},
-    enableEditing: () => {},
-    disableEditing: () => {},
-    setSelection: () => {},
+    setEditorValue: () => { },
+    enableEditing: () => { },
+    disableEditing: () => { },
+    setSelection: () => { },
   },
 });
 

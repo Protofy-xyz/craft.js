@@ -1,4 +1,4 @@
-import { createTestState } from '@craftjs/core';
+import { createTestState } from '@protocraft/core';
 
 import { wrapRogueElement } from '../wrapRogueElement';
 

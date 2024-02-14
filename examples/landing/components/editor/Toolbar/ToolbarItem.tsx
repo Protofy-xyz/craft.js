@@ -1,4 +1,4 @@
-import { useNode } from '@craftjs/core';
+import { useNode } from '@protocraft/core';
 import { Grid, Slider, RadioGroup } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import React from 'react';

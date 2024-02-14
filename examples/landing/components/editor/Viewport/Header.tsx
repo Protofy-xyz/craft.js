@@ -1,4 +1,4 @@
-import { useEditor } from '@craftjs/core';
+import { useEditor } from '@protocraft/core';
 import { Tooltip } from '@material-ui/core';
 import cx from 'classnames';
 import React from 'react';

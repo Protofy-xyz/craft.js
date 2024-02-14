@@ -1,4 +1,4 @@
-import { useNode, useEditor } from '@craftjs/core';
+import { useNode, useEditor } from '@protocraft/core';
 import cx from 'classnames';
 import { debounce } from 'debounce';
 import { Resizable } from 're-resizable';
@@ -32,19 +32,19 @@ const Indicators = styled.div<{ bound?: 'row' | 'column' }>`
     border: 2px solid #36a9e0;
     &:nth-child(1) {
       ${(props) =>
-        props.bound
-          ? props.bound === 'row'
-            ? `
+    props.bound
+      ? props.bound === 'row'
+        ? `
                 left: 50%;
                 top: -5px;
                 transform:translateX(-50%);
               `
-            : `
+        : `
               top: 50%;
               left: -5px;
               transform:translateY(-50%);
             `
-          : `
+      : `
               left: -5px;
               top:-5px;
             `}
@@ -56,19 +56,19 @@ const Indicators = styled.div<{ bound?: 'row' | 'column' }>`
     }
     &:nth-child(3) {
       ${(props) =>
-        props.bound
-          ? props.bound === 'row'
-            ? `
+    props.bound
+      ? props.bound === 'row'
+        ? `
                 left: 50%;
                 bottom: -5px;
                 transform:translateX(-50%);
               `
-            : `
+        : `
                 bottom: 50%;
                 left: -5px;
                 transform:translateY(-50%);
               `
-          : `
+      : `
               left: -5px;
               bottom:-5px;
             `}
@@ -131,12 +131,12 @@ export const Resizer = ({ propKey, children, ...props }: any) => {
     const width = percentToPx(
       nodeWidth,
       resizable.current &&
-        getElementDimensions(resizable.current.resizable.parentElement).width
+      getElementDimensions(resizable.current.resizable.parentElement).width
     );
     const height = percentToPx(
       nodeHeight,
       resizable.current &&
-        getElementDimensions(resizable.current.resizable.parentElement).height
+      getElementDimensions(resizable.current.resizable.parentElement).height
     );
 
     setInternalDimensions({

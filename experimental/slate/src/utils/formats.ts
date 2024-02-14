@@ -1,5 +1,5 @@
-import { EditorState, QueryMethods } from '@craftjs/core';
-import { QueryCallbacksFor } from '@craftjs/utils';
+import { EditorState, QueryMethods } from '@protocraft/core';
+import { QueryCallbacksFor } from '@protocraft/utils';
 import flatten from 'lodash/flatten';
 import { Text } from 'slate';
 
@@ -67,8 +67,8 @@ export const slateNodesToCraft = (
             parent: parentId,
             nodes: slateNode.children
               ? slateNode.children.map(
-                  (childNode: SlateElement) => childNode.id
-                )
+                (childNode: SlateElement) => childNode.id
+              )
               : [],
           },
         })
@@ -91,11 +91,11 @@ export const slateNodesToCraft = (
         newCraftNode,
         ...(slateNode.children
           ? slateNodesToCraft(
-              rteResolvers,
-              state,
-              slateNode.children as SlateElement[],
-              slateNode.id
-            )
+            rteResolvers,
+            state,
+            slateNode.children as SlateElement[],
+            slateNode.id
+          )
           : []),
       ];
     })
